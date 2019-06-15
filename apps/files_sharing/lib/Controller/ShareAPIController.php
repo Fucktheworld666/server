@@ -1264,7 +1264,7 @@ class ShareAPIController extends OCSController {
 	 *
 	 * @return IShare[]
 	 */
-	private function getSharesFromNode(string $viewer, Node $node, bool $reShares): array {
+	private function getSharesFromNode(string $viewer, $node, bool $reShares): array {
 
 		$providers = [
 			Share::SHARE_TYPE_USER,
